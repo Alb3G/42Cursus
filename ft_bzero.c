@@ -1,46 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 17:36:35 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/12 11:42:04 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/12 11:22:15 by albertoguzm       #+#    #+#             */
+/*   Updated: 2023/09/12 11:48:15 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *str, int c, size_t len)
+void    ft_bzero(void *s, size_t n)
 {
-	unsigned int	i;
-	unsigned char	*ptr;
+    size_t  i;
+    char    *ptr;
 
-
-	i = 0;
-	
-	ptr = (unsigned char *)str;
-	while (i < len)
-	{
-		ptr[i] = (unsigned char)c;
-		i++;
-	}	
-	return (ptr);
+    i = 0;
+    ptr = (char *)s;
+    while (i < n)
+    {
+        ptr[i] = 0;
+        i++;
+    }
 }
 
-// int main(void)
-// {
-// 	int 	c;
-// 	int 	len;
-// 	char	str[] = "hola";
+int main(void)
+{
+    size_t  n;
+    char    str[] = "";
 
-// 	c = '$';
-// 	len = 4;
-	
-// 	ft_memset(str, c, len);
+    n = 4;
+    ft_bzero(str, n);
 
-// 	printf("%s", str);
+    printf("%s", str);
 
-// 	return (0);
-// }
+    return (0);
+}
