@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
+/*   By: albertoguzman <albguzma@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 13:30:49 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/12 18:01:23 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/12 17:02:34 by albguzma       #+#    #+#             */
+/*   Updated: 2023/09/12 17:02:34 by albguzma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+int main(void)
 {
-	size_t	i;
-	char	*dst_ptr;
-	char	*src_ptr;
-	
-	dst_ptr = (char *)dst;
-	src_ptr = (char *)src;
-	
-	i = 0;
-	while (i < n)
-	{
-		dst_ptr[i] = src_ptr[i];
-		i++;
-	}
+	char	*src = "Hello";
+	char	*dst[10];
+	int		len;
 
-	return (dst_ptr);
+	len = 5;
+	ft_memmove(dst, src, len);
+
+	printf("%s", dst);
+	
+	return (0);
 }

@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 13:30:49 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/12 18:01:23 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/12 17:35:31 by albertoguzm       #+#    #+#             */
+/*   Updated: 2023/09/12 18:20:26 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
+	char	*src_cpy;
 	char	*dst_ptr;
 	char	*src_ptr;
-	
-	dst_ptr = (char *)dst;
-	src_ptr = (char *)src;
-	
-	i = 0;
-	while (i < n)
+
+	src_cpy = (char *)malloc(len);
+	if (src_cpy == NULL)
 	{
-		dst_ptr[i] = src_ptr[i];
+		return (NULL);
+	}
+	src_ptr = (char *)src;
+	dst_ptr = (char *)dst;
+	i = 0;
+	while (i < len)
+	{
+		src_cpy[i] = src_ptr[i];
 		i++;
 	}
-
+	i = 0;
+	while (i < len)
+	{
+		dst_ptr[i] = src_cpy[i];
+		i++;
+	}
 	return (dst_ptr);
 }
