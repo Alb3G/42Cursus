@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:36:35 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/13 11:37:47 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 12:28:35 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	*ft_memset(void *str, int c, size_t len)
 	{
 		ptr[i] = (unsigned char)c;
 		i++;
-	}	
+	}
 	return (ptr);
 }
