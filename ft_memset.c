@@ -6,7 +6,7 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:36:35 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/13 09:47:46 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:37:47 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,3 @@ void	*ft_memset(void *str, int c, size_t len)
 	}	
 	return (ptr);
 }
-
-// int main(void)
-// {
-// 	int 	c;
-// 	int 	len;
-// 	char	str[] = "hola";
-
-// 	c = '$';
-// 	len = 4;
-// 	ft_memset(str, c, len);
-
-// 	printf("%s", str);
-
-// 	return (0);
-// }

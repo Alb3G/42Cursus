@@ -6,15 +6,15 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:28:46 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/13 09:48:06 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:51:30 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int nbr)
+int	ft_isprint(int c)
 {
-	if (nbr >= 32 && nbr <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

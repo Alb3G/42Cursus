@@ -6,15 +6,15 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 12:17:06 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/11 16:50:45 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 12:00:01 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int nbr)
+int	ft_isalpha(int c)
 {
-	if ((nbr >= 101 && nbr <= 132) || (nbr >= 141 && nbr <= 172))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }

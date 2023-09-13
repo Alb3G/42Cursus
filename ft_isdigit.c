@@ -6,15 +6,15 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 12:46:30 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/11 15:29:51 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:51:23 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int nbr)
+int	ft_isdigit(int c)
 {
-	if (nbr >= '0' && nbr <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

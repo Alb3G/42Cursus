@@ -6,7 +6,7 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 11:22:15 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/13 09:46:20 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 11:34:03 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-// int main(void)
-// {
-//     size_t  n;
-//     char    str[] = "hola";
-
-//     n = 4;
-//     ft_bzero(str, n);
-
-//     printf("%s", str);
-
-//     return (0);
-// }
