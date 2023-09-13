@@ -6,7 +6,7 @@
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:35:31 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/12 18:20:26 by albertoguzm      ###   ########.fr       */
+/*   Updated: 2023/09/13 09:27:22 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	src_cpy = (char *)malloc(len);
 	if (src_cpy == NULL)
-	{
 		return (NULL);
-	}
 	src_ptr = (char *)src;
 	dst_ptr = (char *)dst;
 	i = 0;

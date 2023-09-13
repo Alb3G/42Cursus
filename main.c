@@ -15,13 +15,15 @@
 int main(void)
 {
 	char	*src = "Hello";
-	char	*dst[10];
+	char	dst[10];
 	int		len;
 
-	len = 5;
+	len = 3;
 	ft_memmove(dst, src, len);
 
 	printf("%s", dst);
+	
+	free(dst);
 	
 	return (0);
 }
