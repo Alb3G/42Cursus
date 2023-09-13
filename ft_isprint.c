@@ -6,7 +6,7 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:28:46 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/11 17:31:06 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 09:48:06 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ int	ft_isprint(int nbr)
 {
 	if (nbr >= 32 && nbr <= 126)
 		return (1);
-	return(0);
+	return (0);
 }
