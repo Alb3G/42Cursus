@@ -14,16 +14,16 @@
 
 int main(void)
 {
-	char	*src = "Hello";
-	char	dst[10];
-	int		len;
+	char	src[] = "Hello";
+	char	dst[10] = "";
+	size_t	len;
 
 	len = 3;
-	ft_memmove(dst, src, len);
+	memcpy(dst, src, len);
+	printf("%s ", dst);
 
+	ft_memcpy(dst, src, len);
 	printf("%s", dst);
-	
-	free(dst);
 	
 	return (0);
 }

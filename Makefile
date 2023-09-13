@@ -1,4 +1,4 @@
-SRC = ft_memmove.c main.c
+SRC = main.c ft_strlcpy.c
 NAME = libft.a
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror

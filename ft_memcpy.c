@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 13:30:49 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/13 09:46:52 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/13 10:25:41 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		dst_ptr[i] = src_ptr[i];
 		i++;
 	}
-	return (dst_ptr);
+	return (dst);
 }
