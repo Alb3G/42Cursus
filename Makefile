@@ -1,20 +1,33 @@
-SRC =  main.c ft_strlcat.c ft_strlen.c ft_strlcpy.c
+SRC = 	ft_strlcat.c \
+		ft_strlen.c \
+		ft_strlcpy.c \
+		ft_isalnum.c \
+		ft_memset.c \
+		ft_memmove.c \
+		ft_memcpy.c \
+		ft_isprint.c \
+		ft_isdigit.c \
+		ft_isascii.c \
+		ft_isalpha.c \
+		ft_bzero.c \
+		# main.c 
+
 NAME = libft.a
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 
-all:$(NAME) exec
+all:$(NAME) 
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
-%.o : %.c
+%.o: %.c
 	gcc $(FLAGS) -c $< -o $@
-exec: $(OBJ)
-	gcc $(FLAGS) $(OBJ) -o exec
+# exec: $(OBJ)
+# 	gcc $(FLAGS) $(OBJ) -o exec
 clean:
 	rm -f $(OBJ)
 fclean: clean
-	rm -f $(NAME) $(OBJ) exec
+	rm -f $(NAME) $(OBJ)
 
 re: fclean all
 
