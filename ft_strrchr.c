@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 18:38:48 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/16 11:24:14 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/16 11:30:06 by albertoguzm       #+#    #+#             */
+/*   Updated: 2023/09/16 14:18:57 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr (const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	if (ft_isalpha(c))
+	char	*found;
+	char	*p;
+	
+	c = (unsigned char)c;
+	if (c == '\0')
+		return (ft_strchr(str, '\0'));
+	found = NULL;
+	p = strchr (str, c);
+	while (p != NULL)
 	{
-		while (*str)
-		{
-			if (*str == (char)c)
-			{
-				return ((char*)str);
-			}
-			str++;
-		}
+		found = p;
+		str = p + 1;
+		p = strchr (str, c);
 	}
-	return (NULL);
+	return ((char *)found);
 }

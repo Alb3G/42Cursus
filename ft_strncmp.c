@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 17:15:07 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/15 18:48:02 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/16 14:29:38 by albertoguzm       #+#    #+#             */
+/*   Updated: 2023/09/16 15:25:43 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main(void)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	char	*str = "alberta";
-	int		letter = 66;
+    size_t    i;
 
-	printf("%s", strchr(str, letter));
-	
-	return (0);
+    i = 0;
+    while (s1[i] && s2[i] && i < n)
+    {
+      if (s1[i] == s2[i])
+      {
+        i++;
+      }
+      return (s1[i] - s2[i]);
+    }
+    return (0);
 }
