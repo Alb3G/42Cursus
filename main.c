@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/15 18:34:29 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/16 15:40:26 by albguzma         ###   ########.fr       */
+/*   Created: 2023/09/16 17:07:01 by albguzma          #+#    #+#             */
+/*   Updated: 2023/09/16 17:15:37 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int main(void)
 {
-	if (ft_isalpha(c) && (c >= 'A' && c <= 'Z'))
-		return (c += 32);
-	return (c);
+	char *s1 = "test";
+	char *s2 = "";
+	int n = 1;
+	
+	printf("%i\n", strncmp(s1, s2, n));
+
+	printf("%i", ft_strncmp(s1, s2, n));
+
+	return (0);
 }

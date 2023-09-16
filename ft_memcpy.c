@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
+/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 13:30:49 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/14 15:36:21 by albertoguzm      ###   ########.fr       */
+/*   Updated: 2023/09/16 15:45:35 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

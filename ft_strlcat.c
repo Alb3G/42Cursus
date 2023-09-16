@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
+/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:47:55 by albguzma          #+#    #+#             */
-/*   Updated: 2023/09/15 18:01:32 by albertoguzm      ###   ########.fr       */
+/*   Updated: 2023/09/16 15:45:21 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
