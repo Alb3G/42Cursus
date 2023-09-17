@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:35:31 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/16 15:45:30 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/17 10:58:28 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
