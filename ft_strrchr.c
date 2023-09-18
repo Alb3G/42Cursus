@@ -6,7 +6,7 @@
 /*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 11:30:06 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/16 16:55:51 by albguzma         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:01:28 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return ((char *)found);
 }
-
-// your strrchr does not work with \0
-// your strrchr does not segfault when a null parameter is sent

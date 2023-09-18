@@ -16,24 +16,25 @@ SRC = 	ft_strlcat.c \
 		ft_strrchr.c \
 		ft_strncmp.c \
 		ft_memchr.c \
-		main.c \
+		ft_memcmp.c \
+		# main.c \
 
 NAME = libft.a
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 
-all:$(NAME) exec
+all:$(NAME) #exec
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 %.o: %.c
 	gcc $(FLAGS) -c $< -o $@
-exec: $(OBJ)
-	gcc $(FLAGS) $(OBJ) -o exec
+#exec: $(OBJ)
+#	gcc $(FLAGS) $(OBJ) -o exec
 clean:
 	rm -f $(OBJ)
 fclean: clean
-	rm -f $(NAME) $(OBJ) exec
+	rm -f $(NAME) $(OBJ)
 
 re: fclean all
 
