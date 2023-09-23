@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
+/*   By: albguzma <albguzma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 14:29:38 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/17 10:50:48 by albertoguzm      ###   ########.fr       */
+/*   Updated: 2023/09/23 16:48:25 by albguzma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
