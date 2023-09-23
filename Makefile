@@ -21,6 +21,7 @@ SRC = 	ft_strlcat.c \
 		ft_atoi.c \
 		ft_calloc.c \
 		ft_strdup.c \
+		ft_substr.c \
 		# main.c \
 
 NAME = libft.a
