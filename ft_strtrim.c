@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albertoguzman <albertoguzman@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 09:16:13 by albertoguzm       #+#    #+#             */
-/*   Updated: 2023/09/28 17:31:58 by albertoguzm      ###   ########.fr       */
+/*   Created: 2023/09/28 17:32:27 by albertoguzm       #+#    #+#             */
+/*   Updated: 2023/09/28 17:57:44 by albertoguzm      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+int	ft_isspace(int c)
+{
+	if (c == ' ')
+		return (1);
+	return(0);
+}
+
+char *ft_strtrim(char const *s1, char const *set)
 {
 	char	*new_str;
-	int		total_len;
 
-	total_len = ft_strlen(s1) + ft_strlen(s2) + 1; 
-	if (!s1 && !s2)
-		return (NULL);
-	new_str = (char *)malloc(total_len);
-	if (new_str == NULL)
-		return (NULL);
-	ft_strlcpy(new_str, s1, total_len);
-	ft_strlcat(new_str, s2, total_len);
-	return (new_str);
+	
 }
+/*
+	Devuelve: La string recortada, NULL si falla la reserva de memoria.
+	
+	Elimina todos los caracteres de la string ’set’
+	desde el principio y desde el final de ’s1’, hasta
+	encontrar un caracter no perteneciente a ’set’. La
+	string resultante se devuelve con una reserva de
+	malloc(3)
+*/

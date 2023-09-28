@@ -22,6 +22,7 @@ SRC = 	ft_strlcat.c \
 		ft_calloc.c \
 		ft_strdup.c \
 		ft_substr.c \
+		ft_strjoin.c \
 		# main.c \
 
 NAME = libft.a
@@ -34,8 +35,8 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 %.o: %.c
 	gcc $(FLAGS) -c $< -o $@
-#exec: $(OBJ)
-#	gcc $(FLAGS) $(OBJ) -o exec
+# exec: $(OBJ)
+# 	gcc $(FLAGS) $(OBJ) -o exec
 clean:
 	rm -f $(OBJ)
 fclean: clean
