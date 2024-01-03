@@ -23,6 +23,7 @@ SRC = 	ft_strlcat.c \
 		ft_strdup.c \
 		ft_substr.c \
 		ft_strjoin.c \
+		ft_strtrim.c\
 		# main.c \
 
 NAME = libft.a
